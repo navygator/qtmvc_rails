@@ -6,5 +6,8 @@ class Group < ActiveRecord::Base
            :dependent => :destroy
   has_many :students,
            :through => :relationships, :source => :employee
-  #has_many :employees, :through => :relationships
+
+  validates :instructor_id, :presence => true
+  validates :course_id, :presence => true
+  validates :name, :presence => true
 end

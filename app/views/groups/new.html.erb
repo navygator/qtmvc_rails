@@ -1,0 +1,7 @@
+<h1>Создать учебную группу</h1>
+<%= form_for(@group) do |f| %>
+    <%= render 'fields', :f => f %>
+    <div class="actions">
+      <%= f.submit "Создать учебную группу" %>
+    </div>
+<% end %>

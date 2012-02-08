@@ -1,0 +1,13 @@
+<h1>Список учебных групп</h1>
+<div class="groups">
+  <table summary="Group table">
+    <tr>
+      <th>Название</th>
+      <th>Преподаватель</th>
+      <th>Количество студентов</th>
+      <th></th>
+    </tr>
+    <%= render @groups %>
+  </table>
+  <%= button_to "Создать учебную групппу", new_group_path, :method => :get %>
+</div>

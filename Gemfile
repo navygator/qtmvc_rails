@@ -7,6 +7,7 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3', '1.3.5'
 gem 'jquery-rails'
+gem "rails-breadcrumbs", "~> 1.0.0"
 
 group :development do
   gem 'rspec-rails', '2.8.0'
