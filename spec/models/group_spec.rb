@@ -36,5 +36,13 @@ describe Group do
     it "should have course method" do
       @group.should respond_to(:course)
     end
+
+    it "should have add method" do
+      @group.should respond_to(:add)
+    end
+
+    it "should have remove method" do
+      @group.should respond_to(:remove)
+    end
   end
 end

@@ -5,21 +5,30 @@ class GroupsController < ApplicationController
   add_breadcrumb 'Edit a group', '', :only => [:edit, :update]
 
   def index
-    @title = "Groups"
+    @title = "Group list"
     @groups = Group.all
   end
 
   def new
-    @title = "New"
+    @title = "New group"
     @group = Group.new
     @instructors = Instructor.all
   end
 
   def edit
+    @title = "Edit group"
+    @group = Group.find(params[:id])
   end
 
   def update
-
+    @group = Group.find(params[:id])
+    if @group.update_attributes(params[:group])
+      flash[:success] = "Group updated"
+      redirect_to groups_path
+    else
+      @title = "Edit group"
+      render 'edit'
+    end
   end
 
   def create

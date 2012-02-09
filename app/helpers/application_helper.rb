@@ -1,6 +1,6 @@
 module ApplicationHelper
   def title
-    base_title = "Managing Study groups Sample App"
+    base_title = "Managing Study groups"
     "#{base_title} | #{@title}"
   end
 

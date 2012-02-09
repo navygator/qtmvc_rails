@@ -82,18 +82,68 @@ describe GroupsController do
   describe "GET 'edit'" do
     before(:each) do
       @group = Factory(:group)
+      @student = Factory(:employee)
+      @student.enter!(@group)
     end
     it "returns http success" do
       get :edit, :id => @group
       response.should be_success
     end
 
-    it "should have name field"
-    it "should have students table"
-    it "should have student fio"
-    it "should have organization name"
-    it "should have link to delete user from group"
-    it "should have button to add student to group"
+    it "should have instructor fio" do
+      get :edit, :id => @group
+      response.should have_selector("label", :for => "group_#{@group.instructor.fio}") #,
+                                    #:content => @group.instructor.fio )
+    end
+
+    it "should have name field" do
+      get :edit, :id => @group
+      response.should have_selector("input[name='group[name]'][type='text']")
+    end
+
+    it "should have student fio" do
+      get :edit, :id => @group
+      response.should have_selector("td", :content => @student.fio)
+    end
+
+    it "should have organization name" do
+      get :edit, :id => @group
+      response.should have_selector("td", :content => @student.organization.name)
+    end
+
+    it "should have link to delete user from group" do
+      get :edit, :id => @group
+      response.should have_selector("td", :content => "delete")
+    end
+
+    it "should have button to add student to group" do
+      get :edit, :id => @group
+      response.should have_selector("form.button_to", :action => new_group_path)
+    end
   end
 
+  describe "PUT 'update'" do
+    before(:each) do
+      @group = Factory(:group)
+    end
+
+    describe "failure" do
+      it "should render edit page" do
+        put :update, :id => @group, :group => { :name => "" }
+        response.should render_template("edit")
+      end
+    end
+
+    describe "success" do
+      it "should change name" do
+        put :update, :id => @group, :group => { :name => "New name" }
+        assigns(:group).name.should eq "New name"
+      end
+
+      it "should have flash message" do
+        put :update, :id => @group, :group => { :name => "New name" }
+        flash[:success].should =~ /group updated/i
+      end
+    end
+  end
 end
