@@ -56,4 +56,8 @@ ActiveRecord::Schema.define(:version => 20120208052436) do
     t.datetime "updated_at"
   end
 
+  add_index "relationships", ["employee_id"], :name => "index_relationships_on_employee_id"
+  add_index "relationships", ["group_id", "employee_id"], :name => "index_relationships_on_group_id_and_employee_id", :unique => true
+  add_index "relationships", ["group_id"], :name => "index_relationships_on_group_id"
+
 end
