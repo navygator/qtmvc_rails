@@ -1,2 +1,23 @@
-<h1>Groups#edit</h1>
-<p>Find me in app/views/groups/edit.html.erb</p>
+<h1>Редактировать учебную группу</h1>
+<%= form_for @group do |f| %>
+    <div class="field">
+      <%= f.label :instructor, "Преподаватель: " %>
+      <%= f.label @group.instructor.fio %>
+    </div>
+    <div class="field">
+      <%= f.label :name, "Название учебной группы" %><br />
+      <%= f.text_field :name %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Save changes" %>
+    </div>
+<% end %>
+<table summary="Students table">
+  <tr>
+    <th>Сотрудник</th>
+    <th>Организация</th>
+    <th></th>
+  </tr>
+  <%= render @group.students %>
+</table>
+<%= button_to "Add to group", , :method => :get %>

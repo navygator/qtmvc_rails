@@ -1,4 +1,8 @@
 QtmvcRails::Application.routes.draw do
+  #resources :relationships, :only => [:new, :create, :destroy]
+
+  match '/students/:group_id/add', :to => 'relationships#new'
+  match '/students/:group_id/destroy', :to => 'relationships#destroy'
 
   resources :groups, :except => [:show, :destroy]
 
