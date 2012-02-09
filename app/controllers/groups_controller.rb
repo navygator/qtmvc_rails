@@ -23,5 +23,14 @@ class GroupsController < ApplicationController
   end
 
   def create
+    @group = Group.new(params[:group].merge(:course_id => 1))
+    if @group.save
+      flash[:success] = 'Group created'
+      redirect_to edit_group_path @group
+    else
+      @title = "New"
+      @instructors = Instructor.all
+      render 'new'
+    end
   end
 end

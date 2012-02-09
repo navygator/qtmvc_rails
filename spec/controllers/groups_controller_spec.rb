@@ -30,7 +30,7 @@ describe GroupsController do
 
     it "should have link to edit group" do
       get :index
-      response.should have_selector("a", :href=> group_path(@group), :content => 'edit')
+      response.should have_selector("a", :href=> edit_group_path(@group), :content => 'edit')
     end
   end
 
@@ -52,9 +52,30 @@ describe GroupsController do
   end
 
   describe "POST 'create'" do
-    it "returns http success" do
-      get 'create'
-      response.should be_success
+    describe "failure" do
+      let(:invalid) { { :instructor_id => nil, :course_id => nil, :name => "" } }
+
+      it "should not create group" do
+        expect { post :create, :group => invalid }.to_not change(Group, :count)
+      end
+
+      it "should render 'new' page" do
+        post :create, :group => invalid
+        response.should render_template('new')
+      end
+    end
+
+    describe "success" do
+      let(:valid) { { :instructor_id => 1, :course_id => 1, :name => "Sample group" } }
+
+      it "should create group" do
+        expect { post :create, :group => valid }.to change(Group, :count)
+      end
+
+      it "should redirect to group edit page" do
+        post :create, :group => valid
+        response.should redirect_to edit_group_path(assigns(:group))
+      end
     end
   end
 
@@ -66,6 +87,13 @@ describe GroupsController do
       get :edit, :id => @group
       response.should be_success
     end
+
+    it "should have name field"
+    it "should have students table"
+    it "should have student fio"
+    it "should have organization name"
+    it "should have link to delete user from group"
+    it "should have button to add student to group"
   end
 
 end
