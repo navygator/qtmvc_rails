@@ -1,2 +1,11 @@
-<h1>Relationships#new</h1>
-<p>Find me in app/views/relationships/new.html.erb</p>
+<h1>Добавить сотрудника в учебную группу</h1>
+<%= form_for @relationship do |f| %>
+    <div class="field">
+      <%= f.label "org_id", "Организация" %><br />
+      <%= collection_select :organization,:organization_id, @organizations, :id, :name %>
+    </div>
+    <div class="field">
+      <%= f.label :employee_id, "Сотрудник" %>
+      <%= f.collection_select :employee_id, @employees, :id, :fio %>
+    </div>
+<% end %>

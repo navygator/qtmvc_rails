@@ -118,7 +118,7 @@ describe GroupsController do
 
     it "should have button to add student to group" do
       get :edit, :id => @group
-      response.should have_selector("form.button_to", :action => new_group_path)
+      response.should have_selector("form.button_to", :action => add_student_path(@group.id))
     end
   end
 
