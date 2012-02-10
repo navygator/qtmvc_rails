@@ -20,4 +20,4 @@
   </tr>
   <%= render @group.students %>
 </table>
-<%= button_to "Add to group", , :method => :get %>
+<%= button_to "Add to group", add_student_path(@group.id), :method => :get %>

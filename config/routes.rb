@@ -1,10 +1,9 @@
 QtmvcRails::Application.routes.draw do
-  resources :relationships, :only => [:new, :create, :destroy]
 
-  #match '/students/:group_id/add', :to => 'relationships#new'
-  #match '/students/:group_id/destroy', :to => 'relationships#destroy'
 
+  resources :relationships, :only => [:create, :destroy]
   resources :groups, :except => [:show, :destroy]
+  match '/students/:group_id/add', :to => 'relationships#new', :as => :add_student
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
