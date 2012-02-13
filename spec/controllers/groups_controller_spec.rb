@@ -92,8 +92,8 @@ describe GroupsController do
 
     it "should have instructor fio" do
       get :edit, :id => @group
-      response.should have_selector("label", :for => "group_#{@group.instructor.fio}") #,
-                                    #:content => @group.instructor.fio )
+      response.should have_selector("label", :for => "group_instructor_id",
+                                    :content => @group.instructor.fio )
     end
 
     it "should have name field" do

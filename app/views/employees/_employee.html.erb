@@ -1,5 +1,5 @@
 <tr>
   <td><%= employee.fio %></td>
   <td><%= employee.organization.name %></td>
-  <td><%= link_to "delete", "#" %></td>
+  <td><%= link_to "delete", group_student_path(@group, employee), :method => :delete %></td>
 </tr>

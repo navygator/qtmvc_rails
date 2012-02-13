@@ -2,7 +2,7 @@
 <%= form_for @group do |f| %>
     <div class="field">
       <%= f.label :instructor, "Преподаватель: " %>
-      <%= f.label @group.instructor.fio %>
+      <%= f.label :instructor_id, @group.instructor.fio %>
     </div>
     <div class="field">
       <%= f.label :name, "Название учебной группы" %><br />
@@ -20,4 +20,4 @@
   </tr>
   <%= render @group.students %>
 </table>
-<%= button_to "Add to group",  new_group_student_path(@group.id), :method => :get %>
+<%= button_to "Add to group", new_group_student_path(@group.id), :method => :get %>

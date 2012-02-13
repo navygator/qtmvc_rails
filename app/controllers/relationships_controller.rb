@@ -15,11 +15,16 @@ class RelationshipsController < ApplicationController
       flash[:success] = "Successfully added to group"
       redirect_to edit_group_path(@group)
     else
+      #TODO: Issue render /relationships URL
       render 'new'
     end
   end
 
   def destroy
+    @group = Group.find(params[:group_id])
+    @employee = Employee.find(params[:id])
+    @group.remove(@employee)
+    redirect_to edit_group_path(@group)
   end
 
 end

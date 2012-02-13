@@ -7,4 +7,9 @@ class Organization < ActiveRecord::Base
   inn_regex = /\d[10]/
   validates :name, :presence => true
   validates :inn, :presence => true, :length => { :is => 10 }, :format => { :with => inn_regex }
+
+  #TODO: Select employees that not in current group
+  def employees_select_by(group)
+    employees
+  end
 end

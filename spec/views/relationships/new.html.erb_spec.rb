@@ -27,4 +27,6 @@ describe "relationships/new.html.erb" do
     render
     rendered.should have_selector("select#relationship_employee_id")
   end
+
+  it "should not render employees that's already in this group"
 end

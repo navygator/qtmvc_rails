@@ -54,6 +54,19 @@ describe RelationshipsController do
   end
 
   describe "DELETE 'destroy'" do
-    #TODO: Some tests here
+    before(:each) do
+      @group = Factory(:group)
+      @employee = Factory(:employee)
+      @group.add(@employee)
+    end
+
+    it "should remove student from group" do
+      expect { delete :destroy, :group_id => @group, :id => @employee }.to change(Relationship, :count).by(-1)
+    end
+
+    it "should redirect to edit group path" do
+      delete :destroy, :group_id => @group, :id => @employee
+      response.should redirect_to edit_group_path(@group)
+    end
   end
 end

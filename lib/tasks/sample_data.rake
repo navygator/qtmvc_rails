@@ -29,7 +29,7 @@ end
 
 def create_employees
   @organizations = Organization.all
-  @organizations[1..4].each do |organization|
+  @organizations[0..4].each do |organization|
     4.times do
       organization.employees.create!(:fio => Faker::Name.name)
     end

@@ -13,7 +13,7 @@ describe Employee do
   end
 
   it "should reject to short names" do
-    @employee = Employee.new(valid_attr.merge(:fio => 'a' * 9))
+    @employee = Employee.new(valid_attr.merge(:fio => 'a' * 5))
     @employee.should_not be_valid
   end
 
