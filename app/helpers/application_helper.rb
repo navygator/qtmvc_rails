@@ -5,6 +5,6 @@ module ApplicationHelper
   end
 
   def logo
-    image_tag("logo.png", :alt => "Logo", :class => "round")
+    image_tag("rails.png", :alt => "Logo", :class => "round")
   end
 end
