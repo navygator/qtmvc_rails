@@ -30,25 +30,5 @@ describe Employee do
     it "should have relationships method" do
       @employee.should respond_to(:relationships)
     end
-
-    it "should have enter method" do
-      @employee.should respond_to(:enter!)
-    end
-
-    it "should enter to group" do
-      @employee.enter!(@group)
-      @group.students.should include(@employee)
-    end
-
-    it "should have leave method" do
-      @employee.should respond_to(:leave!)
-    end
-
-    it "should leave from group" do
-      @employee.enter!(@group)
-      @group.students.should include(@employee)
-      @employee.leave!(@group)
-      @employee.should_not be_in_group(@group)
-    end
   end
 end

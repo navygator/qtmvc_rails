@@ -20,6 +20,7 @@ describe Group do
   describe "relationships" do
     before(:each) do
       @group = Group.create(valid_attr)
+      @employee = Factory(:employee)
     end
 
     it "should have students" do
@@ -43,6 +44,18 @@ describe Group do
 
     it "should have remove method" do
       @group.should respond_to(:remove)
+    end
+
+    it "should add user to group" do
+      @group.add(@employee)
+      @employee.should be_in_group(@group)
+    end
+
+    it "should remove user from group" do
+      @group.add(@employee)
+      @employee.should be_in_group(@group)
+      @group.remove(@employee)
+      @employee.should_not be_in_group(@group)
     end
   end
 end

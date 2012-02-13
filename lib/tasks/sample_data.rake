@@ -4,6 +4,7 @@ namespace :db do
     Rake::Task['db:reset'].invoke
     create_instructors
     create_organizations
+    create_employees
     Course.create!(:name => "Sample Course")
   end
 end
@@ -23,6 +24,15 @@ def create_organizations
     name = Faker::Company.name
     inn = (0..9).to_a.shuffle.join
     Organization.create!(:name => name, :inn => inn)
+  end
+end
+
+def create_employees
+  @organizations = Organization.all
+  @organizations[1..4].each do |organization|
+    4.times do
+      organization.employees.create!(:fio => Faker::Name.name)
+    end
   end
 end
 

@@ -1,11 +1,26 @@
 <h1>Добавить сотрудника в учебную группу</h1>
 <%= form_for @relationship do |f| %>
+    <%= render 'shared/error_messages', :object => f.object %>
     <div class="field">
-      <%= f.label "org_id", "Организация" %><br />
-      <%= collection_select :organization,:organization_id, @organizations, :id, :name %>
+      Название группы:
+      <%= f.hidden_field :group_id %>
+      <%= f.label :group_id, @group.name %>
     </div>
     <div class="field">
-      <%= f.label :employee_id, "Сотрудник" %>
-      <%= f.collection_select :employee_id, @employees, :id, :fio %>
+      Преподаватель:
+      <%= f.label :instructor_fio, @group.instructor.fio %>
+    </div>
+    <div class="field">
+      <%= f.label "org_id", "Организация" %><br />
+      <%= collection_select :organization, :id, Organization.order(:name),
+                            :id, :name, :include_blank => true  %>
+    </div>
+    <div class="field">
+      <%= f.label :employee_id, "Сотрудник" %><br />
+      <%= f.grouped_collection_select :employee_id, Organization.order(:name),
+                                      :employees, :name, :id, :fio, :include_blank => true %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Добавить" %>
     </div>
 <% end %>

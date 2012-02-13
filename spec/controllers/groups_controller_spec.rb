@@ -83,7 +83,7 @@ describe GroupsController do
     before(:each) do
       @group = Factory(:group)
       @student = Factory(:employee)
-      @student.enter!(@group)
+      @group.add(@student)
     end
     it "returns http success" do
       get :edit, :id => @group
@@ -118,7 +118,7 @@ describe GroupsController do
 
     it "should have button to add student to group" do
       get :edit, :id => @group
-      response.should have_selector("form.button_to", :action => add_student_path(@group.id))
+      response.should have_selector("form.button_to", :action => new_group_student_path(@group.id))
     end
   end
 

@@ -1,5 +1,5 @@
 class Relationship < ActiveRecord::Base
-  attr_accessible :group_id
+  attr_accessible :employee_id
 
   belongs_to :employee
   belongs_to :group

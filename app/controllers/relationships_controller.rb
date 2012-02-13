@@ -6,11 +6,17 @@ class RelationshipsController < ApplicationController
   def new
     @group = Group.find_by_id(params[:group_id])
     @relationship = @group.relationships.new
-    @organizations = Organization.all
-    @employees = []
   end
 
   def create
+    @group = Group.find(params[:relationship][:group_id])
+    @relationship = @group.relationships.build(:employee_id => params[:relationship][:employee_id])
+    if @relationship.save
+      flash[:success] = "Successfully added to group"
+      redirect_to edit_group_path(@group)
+    else
+      render 'new'
+    end
   end
 
   def destroy

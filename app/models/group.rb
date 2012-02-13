@@ -14,10 +14,10 @@ class Group < ActiveRecord::Base
   validates :name, :presence => true
 
   def add(student)
-    #TODO: To be or not to be...
+    relationships.create!(:employee_id => student)
   end
 
   def remove(student)
-    #TODO: To be or not to be...
+    relationships.find_by_employee_id(student).destroy
   end
 end
