@@ -15,7 +15,7 @@ class RelationshipsController < ApplicationController
       flash[:success] = "Successfully added to group"
       redirect_to edit_group_path(@group)
     else
-      #TODO: Issue render /relationships URL
+      #TODO: It should not render /relationships URL
       render 'new'
     end
   end
@@ -27,4 +27,7 @@ class RelationshipsController < ApplicationController
     redirect_to edit_group_path(@group)
   end
 
+  def show
+    redirect_to root_path
+  end
 end

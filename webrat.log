@@ -46,3 +46,157 @@ REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP heade
 REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
 REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
 REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/1"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: POST /relationships with {"utf8"=>"✓", "relationship"=>{"group_id"=>"1", "employee_id"=>"1"}, "organization"=>{"id"=>""}, "commit"=>"Добавить"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/relationships"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: POST /relationships with {"utf8"=>"✓", "relationship"=>{"group_id"=>"1", "employee_id"=>"1"}, "organization"=>{"id"=>""}, "commit"=>"Добавить"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/relationships"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: POST /relationships with {"utf8"=>"✓", "relationship"=>{"group_id"=>"1", "employee_id"=>"1"}, "organization"=>{"id"=>""}, "commit"=>"Добавить"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/relationships"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: POST /relationships with {"utf8"=>"✓", "relationship"=>{"group_id"=>"1", "employee_id"=>""}, "organization"=>{"id"=>""}, "commit"=>"Добавить"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/new"}
+REQUESTING PAGE: GET / with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {"HTTP_REFERER"=>"/"}
+REQUESTING PAGE: GET /groups/new with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups with {"utf8"=>"✓", "group"=>{"instructor_id"=>"2", "name"=>"Sample Group 1"}, "commit"=>"Создать учебную группу"} and HTTP headers {"HTTP_REFERER"=>"/groups/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/groups"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: POST /groups/1 with {"utf8"=>"✓", "_method"=>"put", "group"=>{"name"=>"New Group Name"}, "commit"=>"Save changes"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/groups with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/1 with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: GET http://www.example.com/ with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/1"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: POST /relationships with {"utf8"=>"✓", "relationship"=>{"group_id"=>"1", "employee_id"=>"1"}, "organization"=>{"id"=>""}, "commit"=>"Добавить"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/new"}
+REQUESTING PAGE: GET http://www.example.com/groups/1/edit with {} and HTTP headers {"HTTP_REFERER"=>"/relationships"}
+REQUESTING PAGE: GET /groups/1/edit with {} and HTTP headers {}
+REQUESTING PAGE: GET /groups/1/students/new with {} and HTTP headers {"HTTP_REFERER"=>"/groups/1/edit"}
+REQUESTING PAGE: POST /relationships with {"utf8"=>"✓", "relationship"=>{"group_id"=>"1", "employee_id"=>""}, "organization"=>{"id"=>""}, "commit"=>"Добавить"} and HTTP headers {"HTTP_REFERER"=>"/groups/1/students/new"}

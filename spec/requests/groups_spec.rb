@@ -27,6 +27,8 @@ describe "Groups" do
   describe "Edit group" do
     before(:each) do
       @group = Factory(:group)
+      @student = Factory(:employee)
+      @group.add(@student)
     end
 
     it "should rename group" do
@@ -34,6 +36,12 @@ describe "Groups" do
       fill_in "group[name]", :with => "New Group Name"
       click_button
       response.should have_selector("td", :content => "New Group Name")
+    end
+
+    it "should have add student feature" do
+      visit edit_group_path(@group)
+      click_button "Add to group"
+      response.should render_template('relationships/new')
     end
   end
 end
